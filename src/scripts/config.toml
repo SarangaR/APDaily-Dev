@@ -1,0 +1,28 @@
+[credentials]
+autosave = true
+username = "sarnga.raj@gmail.com"
+password = "Saranga2405/"
+
+[startup-config]
+browser-prefix-path = "/home/saranga/Documents/APDaily-Dev/src/scripts/"
+browser-executable = "microsoft-edge-dev.desktop"
+url = "https://apclassroom.collegeboard.org/10/assignments?status=completed"
+
+student-signin = [ 962, 432 ]
+next = [ 962, 607 ]
+signin = [ 960, 684 ]
+selector = [ 689, 149 ]
+huge = [ 698, 287 ]
+left-scroll = [ 305, 296 ]
+my-assignments = [ 222, 936 ]
+active = [ 250, 463 ]
+video-start-pos = [ 1408, 646 ]
+
+[main-config]
+total-video-count = 10
+wait-times = [ "8:08", "11:09", "8:56", "9:47", "9:56", "10:03", "11:54", "9:09", "10:15", "11:15", "10:29", "10:21", "6:39", "10:50", "10:17" ]
+
+settings = [ 1485, 895 ]
+double-speed = [ 1499, 774 ]
+play = [ 961, 540 ]
+exit = [ 1571, 172 ]
