@@ -1,8 +1,0 @@
-README.md
-pyproject.toml
-setup.cfg
-APDaily_SarangaR.egg-info/PKG-INFO
-APDaily_SarangaR.egg-info/SOURCES.txt
-APDaily_SarangaR.egg-info/dependency_links.txt
-APDaily_SarangaR.egg-info/requires.txt
-APDaily_SarangaR.egg-info/top_level.txt
