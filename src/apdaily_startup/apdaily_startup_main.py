@@ -28,7 +28,7 @@ def run():
         os.chdir(browser_prefix_path)
         os.system(f'gtk-launch {browser_executable} > /dev/null 2>&1 &')
     elif platform.system() == "Windows":
-        windows_config = toml.load("C:\\Program Files\\apdaily-config.toml")
+        windows_config = toml.load("C:\\Program Files\\apdaily\\apdaily-config.toml")
         browser_prefix_path = str(config["startup-config"]["browser-prefix-path"])
         browser_executable = str(config["startup-config"]["browser-executable"])
         if not os.path.exists(os.path.join(browser_prefix_path, browser_executable)):
