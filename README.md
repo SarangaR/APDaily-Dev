@@ -1,5 +1,5 @@
 # APDaily
-This package allows you to watch AP Classroom Videos automatically.
+This is a custom pip package that allowws you to watch AP Daily videos automatically.
 ## Authors
 - [@SarangaR](https://www.github.com/SarangaR)
 ## Installation
@@ -19,7 +19,7 @@ In an administrator command prompt:
 ```
 
 ## Settings
- - Use the mouse_util script to set the mouse positions in the config file
+ - Use the mouse_util script to set the mouse positions in the ```scripts/config.toml``` file
  ```Python
  import apdaily_methods.mouse_util as mouse_util
  mouse_util.run()
