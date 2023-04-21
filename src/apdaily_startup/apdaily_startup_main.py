@@ -29,12 +29,13 @@ def run():
         os.system(f'gtk-launch {browser_executable} > /dev/null 2>&1 &')
     elif platform.system() == "Windows":
         windows_config = toml.load("C:\\Program Files\\apdaily\\apdaily-config.toml")
-        browser_prefix_path = str(config["startup-config"]["browser-prefix-path"])
-        browser_executable = str(config["startup-config"]["browser-executable"])
-        if not os.path.exists(os.path.join(browser_prefix_path, browser_executable)):
-            logger.error("Browser not found")
-            sys.exit(0)
-        subprocess.Popen(os.path.join(browser_prefix_path, browser_executable))
+        config = windows_config
+        # browser_prefix_path = str(config["startup-config"]["browser-prefix-path"])
+        # browser_executable = str(config["startup-config"]["browser-executable"])
+        # if not os.path.exists(os.path.join(browser_prefix_path, browser_executable)):
+        #     logger.error("Browser not found")
+        #     sys.exit(0)
+        os.system("start msedge")
     else:
         logger.error("OS not supported")
         sys.exit(0)
@@ -90,7 +91,7 @@ def run():
             enter()
             time.sleep(2)
         else:
-            logger.info("Autosaving enabled, skipping username entry.")
+            logger.info("Autosaving enabled, skipping password entry.")
 
     logger.info("Opening AP Classroom")
     keyboard.type(url)

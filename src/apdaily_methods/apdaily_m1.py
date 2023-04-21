@@ -2,6 +2,9 @@ from pynput.mouse import Controller, Button
 import time
 import logging
 import toml
+import platform
+import os
+import sys
 
 def run():
     mouse = Controller()
@@ -9,7 +12,17 @@ def run():
     logger = logging.getLogger("apdaily_main")
     logging.basicConfig(level=logging.INFO, format='[%(asctime)s] [%(name)s] [%(levelname)s] %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
 
-    config = toml.load("/usr/local/bin/apdaily/apdaily-config.toml")
+    config = {}
+
+    if platform.system() == "Linux":
+        linux_config = toml.load("/usr/local/bin/apdaily/apdaily-config.toml")
+        config = linux_config
+    elif platform.system() == "Windows":
+        windows_config = toml.load("C:\\Program Files\\apdaily\\apdaily-config.toml")
+        config = windows_config
+    else:
+        logger.error("OS not supported")
+        sys.exit(0)
 
     TOTAL_VIDEO_COUNT = int(config["main-config"]["total-video-count"])
 

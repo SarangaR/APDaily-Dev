@@ -1,7 +1,7 @@
 [credentials]
 autosave = true
-username = "sarnga.raj@gmail.com"
-password = "Saranga2405/"
+username = "ENTER USERNAME HERE"
+password = "ENTER PASSWORD HERE"
 
 [startup-config]
 browser-prefix-path = "/home/saranga/Documents/APDaily-Dev/src/scripts/"
