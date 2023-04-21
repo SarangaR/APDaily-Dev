@@ -1,5 +1,5 @@
 # APDaily
-This is a custom pip package that allowws you to watch AP Daily videos automatically.
+This is a custom pip package that allows you to watch AP Daily videos automatically.
 ## Authors
 - [@SarangaR](https://www.github.com/SarangaR)
 ## Installation
