@@ -27,4 +27,9 @@ In an administrator command prompt:
  - Update the other portions of the config.toml file included in the ```src/scripts``` folder of this repo (same place as the install script)
  - Then re-run the install script
  
+ ## Running
+ ```Python
+ from apdaily import run
+ run()
+``` 
 
